@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Poppins:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(5, 4, 39);
+  font-size: 20px;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.navbar {
+  padding: 10px 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 35px;
+  color: white;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  color: #00abf0;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-content h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #00abf0;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  height: 60px;
+  width: 400px;
+  margin-top: 50px;
+}
+
+/* styling and coloring the elements ans like filling animation */
+.buttons a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  background-color: #00abf0;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid #00abf0;
+  transition: 0.5s;
+  font-weight: bolder;
+}
+
+.buttons a:nth-child(1) {
+  color: rgb(11, 11, 11);
+}
+
+.buttons a:nth-child(1):hover {
+  color: white;
+}
+.buttons a:nth-child(2) {
+  border: 2px solid #00abf0;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.buttons a:nth-child(2):hover {
+  color: rgb(11, 11, 11);
+}
+
+.buttons a::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: rgb(45, 3, 142);
+  z-index: -1;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.buttons a:hover::before {
+  width: 100%;
+}
+
+.buttons a:nth-child(2)::before {
+  background: rgb(45, 3, 142);
+}
+
+.contact-me {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-me a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50%;
+  text-decoration: none;
+  border: 2px solid #00abf0;
+  color: white;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.contact-me a::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: rgb(45, 3, 142);
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.contact-me a:hover::after {
+  width: 100%;
+}
