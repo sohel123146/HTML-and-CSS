@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.container
+{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: linear-gradient(to Top right, rgb(22, 107, 243), rgb(54, 243, 12));
+}
+
+.card
+{
+    box-shadow: 0px 0px 10px grey;
+    width:300px;
+    height:450px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.form-element
+{
+    margin-left:10px;
+    padding:10px;
+    position:relative;
+    top:10px;
+    color:#615f5f;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+.form-control
+{
+    margin-top:5px;
+    padding:10px;
+    border-radius: 10px;
+    margin-left:15px;
+    width:250px;
+    border:2px solid grey;
+    outline:none;
+}
+
+input[type=radio] 
+{
+    width: 15px;
+    height: 15px;
+    margin-left:18px;
+    margin-top:12px;
+}
+
+label
+{
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    font-weight: bold;
+}
+
+.country
+{
+    font-family:'Times New Roman', Times, serif;
+    margin-left:10px;
+    padding:10px;
+    position:relative;
+    top:5px;
+    color:#615f5f;
+    font-weight: bold;
+}
+
+.options{
+    margin-left:15px;
+    margin-right:15px;
+}
+
+select
+{
+    padding:5px;
+    width:250px;
+    border-radius:10px;
+}
+
+.msg
+{
+    font-family:'Times New Roman', Times, serif;
+    margin-left:10px;
+    padding:10px;
+    position:relative;
+    top:5px;
+    color:#615f5f;
+    font-weight: bold;
+}
+
+.textarea
+{
+    border-radius: 10px;
+    margin-left:15px;
+    width:250px;
+    outline:none;
+}
+
+input[type=checkbox] 
+{
+    width: 15px;
+    height: 15px;
+    margin-left:18px;
+    margin-top:12px;
+}
+
+.sub
+{
+    font-family:'Times New Roman', Times, serif;
+    color:#615f5f;
+    font-weight: bold;
+    font-size: small;
+}
+
+.btn
+{
+    text-align: center;
+    padding:10px;
+    margin:10px;
+    background: green;
+    color:#fff;
+    border-radius: 20px;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+}
+
+
