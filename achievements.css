@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.container
+{
+    height:100vh;
+}
+
+nav
+{
+    display:flex;
+    align-items: center;
+    flex-direction:row;
+    height:60px;
+    background: green;
+}
+
+nav .pages ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+    li
+{
+    display:inline;
+}
+
+li a
+{
+    text-decoration: none;
+    color:black;
+    width:fit-content;
+    margin-right:20px;
+    text-align: center;
+    padding:10px 10px;
+    border-radius:10px;
+    transition: background-color 1s;
+}
+
+nav .pages ul li a:hover {
+    background-color: #111;
+    color:#fff;
+    border-radius: 10px;
+  }
+
+.logo
+{
+    font-family: 'Caveat', cursive;
+    font-size:30px;
+    flex:50%;
+    display: flex;
+    justify-content: center;
+}
+
+.pages
+{
+    padding:10px;
+    flex:50%;
+}
+
+.hi
+{
+    height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size:35px;
+    background: rgb(1, 50, 18);
+    color:#fff;
+    border-bottom:1px solid #fff;
+}
+
+.content-container
+{
+    background: rgb(1, 50, 18);
+    height:600px;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.name
+{
+    text-align: center;
+    color:green;
+    font-size:45px;
+    text-decoration: underline;
+    position:relative;
+    top:10px;
+}
+
+.achievementslist
+{
+    padding:10px;
+    width:600px;
+    height:400px;
+    margin:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievementslist ul li
+{
+    display:block;
+    padding:10px;
+    font-weight: bold;
+    color:#989292;
+    word-spacing: 1.5px;
+}
+
+.achievementslist ul li ul li
+{
+    display:block;
+    font-size:12px;
+    margin-left:15px;
+    font-weight: lighter;
+}
+
+footer
+{
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background: green;
+}
+
+
+.links
+{
+    padding:10px;
+    position:relative;
+    left:10px;
+
+}
+
+footer div ul li a:hover
+{
+    text-decoration: underline;
+}
+
+.copyrights
+{
+    height:60px;
+    background: rgb(1, 50, 18);
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
