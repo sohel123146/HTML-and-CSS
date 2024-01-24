@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-form</title>
+    <link rel="stylesheet" href="login3.css">
+</head>
+<body>
+    <form id="form">
+        <div class="container">
+            <div class="card">
+                <div class="cardbody">
+                    <div class="form-element">Email</div>
+                    <div class="form-group">
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="email"
+                          name="email"
+                          autofocus="autofocus"
+                          placeholder="example@gmail.com"
+                          required
+                        />
+                        <span id="emailError" class="error"></span>
+                    </div>
+    
+                    <div class="form-element">Password</div>
+                    <div class="form-group">
+                        <input
+                        class="form-control"
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Your Password"
+                        required
+                        />
+                        <span id="passwordError" class="error"></span>
+                    </div>
+    
+                    <div class="help">
+                        <input type="checkbox">
+                        <label class="rem">Remember me</label>
+                        <p>Forgot Password?</p>
+                    </div>
+
+                    <button id="my" type="submit">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+<script>
+    // Add event listeners for the input events on email and password fields
+    document.getElementById('email').addEventListener("input", validateEmail);
+    document.getElementById('password').addEventListener("input", validatePassword);
+
+    document.getElementById('my').addEventListener("click", validateForm);
+
+    function validateEmail() {
+        const email = document.getElementById('email').value;
+        const emailError = document.getElementById('emailError');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email === '') {
+            emailError.innerHTML = 'Email is missing';
+            emailError.style.color = 'red';
+            return false;
+        } else {
+            emailError.innerHTML = '';
+        }
+
+        if(!emailPattern.test(email))
+        {
+            emailError.innerHTML = "Email dosen't match";
+            emailError.style.color = 'red';
+            return false;
+        }
+    }
+
+    function validatePassword() {
+        const password = document.getElementById('password').value;
+        const passwordError = document.getElementById('passwordError');
+        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+        if (password === '') {
+            passwordError.innerHTML = 'Password is missing';
+            passwordError.style.color = 'red';
+            return false;
+        } else {
+            passwordError.innerHTML = '';
+        }
+
+        if(!passwordPattern.test(password))
+        {
+            passwordError.innerHTML = "Password dosen't match";
+            passwordError.style.color = 'red';
+            return false;
+        }
+        return true;
+    }
+
+    function validateForm() {
+        validateEmail();
+        validatePassword();
+    }
+</script>
+</body>
+</html>
